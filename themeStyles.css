@@ -1,0 +1,160 @@
+[data-theme="light"] {
+  --bg-color: rgba(241, 241, 224, 0.623);
+  --color: rgb(14, 1, 1);
+  --togglebg: #d4e7d5;
+  --toggleslider: #fff;
+  --roundcolor: #fff;
+  --svgcolor: #111;
+
+  --headerColor: #404040;
+  --headerName: #ffffff;
+  --questionRow: rgb(224, 224, 224);
+  --uploadbtn: #157878;
+  --modalfont: #000000;
+  --modalbg: #ffffff;
+  --tablefont: #111;
+  --tablebg: #f8f6f6;
+  --tablebgEven: ##f4f6fb;
+  --tableboxshadow: 0 5px 10px #e1e5ee;
+  --quesBorder: 5px solid rgb(34, 134, 165);
+  --profileblock: rgb(224, 224, 224);
+  --boxeffect: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+}
+
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  /* background-color: hotpink; */
+}
+
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 24px;
+  left: 10px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#modeName {
+  display: table-cell;
+  padding-top: 3px;
+  padding-left: 2px;
+  background-color: var(--bg-color);
+  padding: 3px 5px;
+  border-radius: 10px;
+}
+
+.theme-switch2 input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider2 {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: blue;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider2 {
+  background-color: #2196f3;
+}
+
+input:focus + .slider2 {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider2:before {
+  -webkit-transform: translateX(100px);
+  -ms-transform: translateX(100px);
+  transform: translateX(100px);
+}
+
+/* Rounded sliders */
+.slider2.round {
+  border-radius: 34px;
+}
+
+.slider2.round:before {
+  border-radius: 50%;
+  background-color: blue;
+}
+
+/* ----------------------------------------- */
+
+.theme-switch-wrapper {
+  display: inline-block;
+  background-color: yellow;
+  color: var(--color);
+  height: 0px;
+  float: right;
+}
+.slider {
+  display: inline-block;
+  border-radius: 5px;
+  color: var(--color);
+  margin: 20px;
+  padding: 5px;
+  margin-right: 1%;
+  padding: 5px 35px;
+  height: 26px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.4s;
+  border-radius: 34px;
+  position: relative;
+}
